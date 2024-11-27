@@ -1,0 +1,27 @@
+public enum WeaponType
+{
+	NoGun = 0,
+	SubMachineGun = 1,
+	AssaultRifle = 2,
+	Pistol = 3,
+	Revolver = 4,
+	ShotGun = 5,
+	Sniper = 6,
+	RPG = 7,
+	Grenade = 8,
+	Melee = 9,
+	GrenadeLauncher = 10,
+	LaserRifle = 11,
+	PlasmaNeo = 12,
+	LaserGun = 13,
+	LightBow = 14,
+	LightFist = 15,
+	MachineGun = 16,
+	Sword = 17,
+	AutoBow = 18,
+	AutoRocketLauncher = 19,
+	AdvancedShotGun = 20,
+	AdvancedSword = 21,
+	RocketLauncher = 22,
+	Count = 23
+}
