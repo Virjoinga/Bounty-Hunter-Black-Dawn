@@ -2,13 +2,13 @@ using HutongGames.PlayMaker;
 using UnityEngine;
 
 [ActionCategory("GameEvent")]
-[Tooltip("Custom Action...")]
+[HutongGames.PlayMaker.Tooltip("Custom Action...")]
 public class FrDistanceTrigger : FsmStateAction
 {
 	[RequiredField]
 	public FsmFloat distance;
 
-	[Tooltip("The Target.")]
+	[HutongGames.PlayMaker.Tooltip("The Target.")]
 	[RequiredField]
 	public FsmOwnerDefault gameObject;
 

@@ -1,7 +1,7 @@
 using HutongGames.PlayMaker;
 using UnityEngine;
 
-[Tooltip("Get a material at index on a gameObject and store it in a variable")]
+[HutongGames.PlayMaker.Tooltip("Get a material at index on a gameObject and store it in a variable")]
 [ActionCategory(ActionCategory.Material)]
 public class GetMaterial : FsmStateAction
 {
@@ -15,7 +15,7 @@ public class GetMaterial : FsmStateAction
 	[UIHint(UIHint.Variable)]
 	public FsmMaterial material;
 
-	[Tooltip("Get the shared material of this object. NOTE: Modifying the shared material will change the appearance of all objects using this material, and change material settings that are stored in the project too.")]
+	[HutongGames.PlayMaker.Tooltip("Get the shared material of this object. NOTE: Modifying the shared material will change the appearance of all objects using this material, and change material settings that are stored in the project too.")]
 	public bool getSharedMaterial;
 
 	public override void Reset()

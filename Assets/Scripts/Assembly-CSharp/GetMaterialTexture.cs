@@ -2,7 +2,7 @@ using HutongGames.PlayMaker;
 using UnityEngine;
 
 [ActionCategory(ActionCategory.Material)]
-[Tooltip("Get a texture from a material on a GameObject")]
+[HutongGames.PlayMaker.Tooltip("Get a texture from a material on a GameObject")]
 public class GetMaterialTexture : FsmStateAction
 {
 	[CheckForComponent(typeof(Renderer))]

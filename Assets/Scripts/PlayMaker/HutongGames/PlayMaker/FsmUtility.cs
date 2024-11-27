@@ -475,10 +475,15 @@ namespace HutongGames.PlayMaker
 
 		public static Texture2D LoadDllResource(string resourceName, int width, int height)
 		{
-			if (Application.isWebPlayer)
+			/*if (Application.isWebPlayer)
+			{
+				return null;
+			}*/
+#if UNITY_WEBGL
 			{
 				return null;
 			}
+#endif
 			Texture2D texture2D = (Texture2D)Resources.Load(resourceName);
 			if (texture2D != null)
 			{
