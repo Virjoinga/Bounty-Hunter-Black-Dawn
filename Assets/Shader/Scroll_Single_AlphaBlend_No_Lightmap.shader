@@ -1,14 +1,14 @@
-ÕShader "Advanced/Scroll Single AlphaBlended_No_Lightmap" {
-Properties {
- _MainTex ("2nd layer (RGB)", 2D) = "white" {}
- _ScrollX ("2nd layer Scroll speed X", Float) = 1
- _ScrollY ("2nd layer Scroll speed Y", Float) = 0
- _SineAmplX ("2nd layer sine amplitude X", Float) = 0.5
- _SineAmplY ("2nd layer sine amplitude Y", Float) = 0.5
- _SineFreqX ("2nd layer sine freq X", Float) = 10
- _SineFreqY ("2nd layer sine freq Y", Float) = 10
- _MMultiplier ("Layer Multiplier", Float) = 2
-}
+Shader "Advanced/Scroll Single AlphaBlended_No_Lightmap" {
+	Properties {
+		_MainTex ("2nd layer (RGB)", 2D) = "white" {}
+		_ScrollX ("2nd layer Scroll speed X", Float) = 1
+		_ScrollY ("2nd layer Scroll speed Y", Float) = 0
+		_SineAmplX ("2nd layer sine amplitude X", Float) = 0.5
+		_SineAmplY ("2nd layer sine amplitude Y", Float) = 0.5
+		_SineFreqX ("2nd layer sine freq X", Float) = 10
+		_SineFreqY ("2nd layer sine freq Y", Float) = 10
+		_MMultiplier ("Layer Multiplier", Float) = 2
+	}
 SubShader { 
  LOD 100
  Tags { "QUEUE"="Transparent" "IGNOREPROJECTOR"="True" "RenderType"="Transparent" }

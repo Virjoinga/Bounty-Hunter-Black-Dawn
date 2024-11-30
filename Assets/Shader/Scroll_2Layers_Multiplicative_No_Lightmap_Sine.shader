@@ -1,21 +1,21 @@
-½*Shader "Advanced/Scroll_2Layers" {
-Properties {
- _MainTex ("Base layer (RGB)", 2D) = "white" {}
- _DetailTex ("2nd layer (RGB)", 2D) = "white" {}
- _ScrollX ("Base layer Scroll speed X", Float) = 1
- _ScrollY ("Base layer Scroll speed Y", Float) = 0
- _Scroll2X ("2nd layer Scroll speed X", Float) = 1
- _Scroll2Y ("2nd layer Scroll speed Y", Float) = 0
- _SineAmplX ("Base layer sine amplitude X", Float) = 0.5
- _SineAmplY ("Base layer sine amplitude Y", Float) = 0.5
- _SineFreqX ("Base layer sine freq X", Float) = 10
- _SineFreqY ("Base layer sine freq Y", Float) = 10
- _SineAmplX2 ("2nd layer sine amplitude X", Float) = 0.5
- _SineAmplY2 ("2nd layer sine amplitude Y", Float) = 0.5
- _SineFreqX2 ("2nd layer sine freq X", Float) = 10
- _SineFreqY2 ("2nd layer sine freq Y", Float) = 10
- _MMultiplier ("Layer Multiplier", Float) = 2
-}
+Shader "Advanced/Scroll_2Layers" {
+	Properties {
+		_MainTex ("Base layer (RGB)", 2D) = "white" {}
+		_DetailTex ("2nd layer (RGB)", 2D) = "white" {}
+		_ScrollX ("Base layer Scroll speed X", Float) = 1
+		_ScrollY ("Base layer Scroll speed Y", Float) = 0
+		_Scroll2X ("2nd layer Scroll speed X", Float) = 1
+		_Scroll2Y ("2nd layer Scroll speed Y", Float) = 0
+		_SineAmplX ("Base layer sine amplitude X", Float) = 0.5
+		_SineAmplY ("Base layer sine amplitude Y", Float) = 0.5
+		_SineFreqX ("Base layer sine freq X", Float) = 10
+		_SineFreqY ("Base layer sine freq Y", Float) = 10
+		_SineAmplX2 ("2nd layer sine amplitude X", Float) = 0.5
+		_SineAmplY2 ("2nd layer sine amplitude Y", Float) = 0.5
+		_SineFreqX2 ("2nd layer sine freq X", Float) = 10
+		_SineFreqY2 ("2nd layer sine freq Y", Float) = 10
+		_MMultiplier ("Layer Multiplier", Float) = 2
+	}
 SubShader { 
  LOD 100
  Tags { "QUEUE"="Transparent" "IGNOREPROJECTOR"="True" "RenderType"="Transparent" }

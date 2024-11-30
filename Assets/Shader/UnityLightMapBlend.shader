@@ -1,9 +1,9 @@
-ÆShader "iPhone/UnityLightMapBlend" {
-Properties {
- _MainTex ("Texture1 (RGB)", 2D) = "white" {}
- _Tex2 ("Texture2 (RGB)", 2D) = "white" {}
- _BlendMap ("Blend Mask", 2D) = "white" {}
-}
+Shader "iPhone/UnityLightMapBlend" {
+	Properties {
+		_MainTex ("Texture1 (RGB)", 2D) = "white" {}
+		_Tex2 ("Texture2 (RGB)", 2D) = "white" {}
+		_BlendMap ("Blend Mask", 2D) = "white" {}
+	}
 SubShader { 
  Tags { "RenderType"="Opaque" }
  Pass {

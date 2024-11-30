@@ -1,14 +1,14 @@
-áShader "Advanced/Animation_Texture" {
-Properties {
- _MainTex ("Base (RGB)", 2D) = "white" {}
- _NumTexTiles ("Num tex tiles", Vector) = (4,4,0,0)
- _ReplaySpeed ("Replay speed - FPS", Float) = 4
- _Randomize ("Randomize", Float) = 0
- _Color ("Color", Color) = (1,1,1,1)
- _Fade ("Fade", Float) = 1
-}
+Shader "Advanced/Animation_Texture" {
+    Properties {
+        _MainTex ("Base (RGB)", 2D) = "white" {}
+        _NumTexTiles ("Num tex tiles", Vector) = (4,4,0,0)
+        _ReplaySpeed ("Replay speed - FPS", Float) = 4
+        _Randomize ("Randomize", Float) = 0
+        _Color ("Color", Color) = (1,1,1,1)
+        _Fade ("Fade", Float) = 1
+    }
 SubShader { 
- Tags { "QUEUE"="Transparent" "IGNOREPROJECTOR"="True" "RenderType"="Transparent" }
+    Tags { "QUEUE"="Transparent" "IGNOREPROJECTOR"="True" "RenderType"="Transparent" }
  Pass {
   Tags { "QUEUE"="Transparent" "IGNOREPROJECTOR"="True" "RenderType"="Transparent" }
   ZWrite Off

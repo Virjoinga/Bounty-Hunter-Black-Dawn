@@ -1,10 +1,10 @@
-”Shader "Advanced/Animation_Texture_16_Block" {
-Properties {
- _MainTex ("Base (RGB)", 2D) = "white" {}
- _NumTexTiles ("Num tex tiles", Vector) = (1,4,0,0)
- _ReplaySpeed ("Replay speed - FPS", Float) = 4
- _Color ("Color", Color) = (1,1,1,1)
-}
+Shader "Advanced/Animation_Texture_16_Block" {
+    Properties {
+        _MainTex ("Base (RGB)", 2D) = "white" {}
+        _NumTexTiles ("Num tex tiles", Vector) = (1,4,0,0)
+        _ReplaySpeed ("Replay speed - FPS", Float) = 4
+        _Color ("Color", Color) = (1,1,1,1)
+    }
 SubShader { 
  Tags { "QUEUE"="Transparent" "IGNOREPROJECTOR"="True" "RenderType"="Transparent" }
  Pass {

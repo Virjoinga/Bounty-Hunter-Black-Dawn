@@ -1,21 +1,21 @@
-Ø:Shader "Advanced/2_Layer_Blinking_No_Lightmap" {
-Properties {
- _TintColor ("Tint Color", Color) = (1,1,1,1)
- _texBase ("MainTex", 2D) = "" {}
- _tex2 ("Texture2", 2D) = "" {}
- _FadeOutDistNear ("Near fadeout dist", Float) = 0
- _FadeOutDistFar ("Far fadeout dist", Float) = 1000
- _Multiplier ("Color multiplier", Float) = 1
- _Bias ("Bias", Float) = 0.1
- _TimeOnDuration ("ON duration", Float) = 0.5
- _TimeOffDuration ("OFF duration", Float) = 0.5
- _BlinkingTimeOffsScale ("Blinking time offset scale (seconds)", Float) = 5
- _SizeGrowStartDist ("Size grow start dist", Float) = 5
- _SizeGrowEndDist ("Size grow end dist", Float) = 50
- _MaxGrowSize ("Max grow size", Float) = 2.5
- _NoiseAmount ("Noise amount (when zero, pulse wave is used)", Range(0,0.5)) = 0
- _Color ("Color", Color) = (1,1,1,1)
-}
+Shader "Advanced/2_Layer_Blinking_No_Lightmap" {
+    Properties {
+        _TintColor ("Tint Color", Color) = (1,1,1,1)
+        _texBase ("MainTex", 2D) = "" {}
+        _tex2 ("Texture2", 2D) = "" {}
+        _FadeOutDistNear ("Near fadeout dist", Float) = 0
+        _FadeOutDistFar ("Far fadeout dist", Float) = 1000
+        _Multiplier ("Color multiplier", Float) = 1
+        _Bias ("Bias", Float) = 0.1
+        _TimeOnDuration ("ON duration", Float) = 0.5
+        _TimeOffDuration ("OFF duration", Float) = 0.5
+        _BlinkingTimeOffsScale ("Blinking time offset scale (seconds)", Float) = 5
+        _SizeGrowStartDist ("Size grow start dist", Float) = 5
+        _SizeGrowEndDist ("Size grow end dist", Float) = 50
+        _MaxGrowSize ("Max grow size", Float) = 2.5
+        _NoiseAmount ("Noise amount (when zero, pulse wave is used)", Range(0,0.5)) = 0
+        _Color ("Color", Color) = (1,1,1,1)
+    }
 SubShader { 
  Pass {
 Program "vp" {

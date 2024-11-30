@@ -1,9 +1,9 @@
-¸³Shader "Decal" {
-Properties {
- _Color ("Main Color", Color) = (1,1,1,1)
- _MainTex ("Base (RGB)", 2D) = "white" {}
- _DecalTex ("Decal (RGBA)", 2D) = "black" {}
-}
+Shader "Decal" {
+	Properties {
+		_Color ("Main Color", Color) = (1,1,1,1)
+		_MainTex ("Base (RGB)", 2D) = "white" {}
+		_DecalTex ("Decal (RGBA)", 2D) = "black" {}
+	}
 SubShader { 
  LOD 250
  Tags { "RenderType"="Opaque" }
