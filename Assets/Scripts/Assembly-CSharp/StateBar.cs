@@ -16,9 +16,9 @@ public class StateBar : UIDelegateMenu, UIMsgListener
 
 	public UILabel m_LabelSkillPoint;
 
-	public GameObject m_ButtonAddMithril;
+	//public GameObject m_ButtonAddMithril;
 
-	public GameObject m_ButtonAddGP;
+	//public GameObject m_ButtonAddGP;
 
 	public UIFilledSprite m_Exp;
 
@@ -35,8 +35,8 @@ public class StateBar : UIDelegateMenu, UIMsgListener
 	private void Awake()
 	{
 		instance = this;
-		AddDelegate(m_ButtonAddMithril);
-		AddDelegate(m_ButtonAddGP);
+		//AddDelegate(m_ButtonAddMithril);
+		//AddDelegate(m_ButtonAddGP);
 		m_Test.SetActive(false);
 	}
 
@@ -80,7 +80,7 @@ public class StateBar : UIDelegateMenu, UIMsgListener
 	{
 		if (!Lock && !InGameMenuManager.GetInstance().Lock)
 		{
-			if (go.Equals(m_ButtonAddMithril))
+            /*if (go.Equals(m_ButtonAddMithril))
 			{
 				UIIAP.Show(UIIAP.Type.IAP);
 			}
@@ -91,8 +91,12 @@ public class StateBar : UIDelegateMenu, UIMsgListener
 			else if (go.Equals(m_Test))
 			{
 				GameApp.GetInstance().GetUserState().EnterGodMode();
-			}
-		}
+			}*/
+            if (go.Equals(m_Test))
+            {
+                GameApp.GetInstance().GetUserState().EnterGodMode();
+            }
+        }
 	}
 
 	public void InvitationRecieved()
