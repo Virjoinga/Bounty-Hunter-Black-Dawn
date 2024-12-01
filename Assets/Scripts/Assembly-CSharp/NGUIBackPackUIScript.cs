@@ -51,7 +51,7 @@ public class NGUIBackPackUIScript : UIGameMenuNormal, UIMsgListener
 
 	public GameObject Avatar;
 
-	public GameObject FreeMithrilButton;
+	//public GameObject FreeMithrilButton;
 
 	private float mLastUpdateAimItemTime;
 
@@ -643,7 +643,7 @@ public class NGUIBackPackUIScript : UIGameMenuNormal, UIMsgListener
 			mSlot2Slot.GetComponent<Collider>().enabled = false;
 			mSlot3Slot.GetComponent<Collider>().enabled = false;
 			mSlot4Slot.GetComponent<Collider>().enabled = false;
-			FreeMithrilButton.GetComponent<Collider>().enabled = false;
+			//FreeMithrilButton.GetComponent<Collider>().enabled = false;
 			ExtendBag.GetComponent<Collider>().enabled = false;
 			ExtendBag2.GetComponent<Collider>().enabled = false;
 		}
@@ -659,7 +659,7 @@ public class NGUIBackPackUIScript : UIGameMenuNormal, UIMsgListener
 			mSlot2Slot.GetComponent<Collider>().enabled = true;
 			mSlot3Slot.GetComponent<Collider>().enabled = true;
 			mSlot4Slot.GetComponent<Collider>().enabled = true;
-			FreeMithrilButton.GetComponent<Collider>().enabled = true;
+			//FreeMithrilButton.GetComponent<Collider>().enabled = true;
 			ExtendBag.GetComponent<Collider>().enabled = true;
 			ExtendBag2.GetComponent<Collider>().enabled = true;
 		}
@@ -680,7 +680,7 @@ public class NGUIBackPackUIScript : UIGameMenuNormal, UIMsgListener
 			mSlot2Slot.GetComponent<Collider>().enabled = false;
 			mSlot3Slot.GetComponent<Collider>().enabled = false;
 			mSlot4Slot.GetComponent<Collider>().enabled = false;
-			FreeMithrilButton.GetComponent<Collider>().enabled = false;
+			//FreeMithrilButton.GetComponent<Collider>().enabled = false;
 			Collider[] componentsInChildren = mBackPack.transform.GetComponentsInChildren<Collider>();
 			foreach (Collider collider in componentsInChildren)
 			{
@@ -702,7 +702,7 @@ public class NGUIBackPackUIScript : UIGameMenuNormal, UIMsgListener
 			mSlot2Slot.GetComponent<Collider>().enabled = true;
 			mSlot3Slot.GetComponent<Collider>().enabled = true;
 			mSlot4Slot.GetComponent<Collider>().enabled = true;
-			FreeMithrilButton.GetComponent<Collider>().enabled = true;
+			//FreeMithrilButton.GetComponent<Collider>().enabled = true;
 			Collider[] componentsInChildren2 = mBackPack.transform.GetComponentsInChildren<Collider>();
 			foreach (Collider collider2 in componentsInChildren2)
 			{
