@@ -475,7 +475,7 @@ namespace HutongGames.PlayMaker
 
 		public static Texture2D LoadDllResource(string resourceName, int width, int height)
 		{
-			if (Application.isWebPlayer)
+			if (/*Application.isWebPlayer*/ Application.platform == RuntimePlatform.WebGLPlayer)
 			{
 				return null;
 			}
