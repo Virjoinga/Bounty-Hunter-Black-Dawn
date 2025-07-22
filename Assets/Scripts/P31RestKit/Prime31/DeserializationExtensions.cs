@@ -13,8 +13,9 @@ namespace Prime31
 			List<T> list = new List<T>();
 			foreach (Hashtable item in self)
 			{
-				list.Add(item.toClass<T>());
-			}
+				//list.Add(item.toClass<T>());
+                list.Add(toClass<T>(item));
+            }
 			return list;
 		}
 
@@ -78,14 +79,16 @@ namespace Prime31
 						ArrayList arrayList = new ArrayList();
 						foreach (object item in enumerable)
 						{
-							arrayList.Add(item.toHashtable());
-						}
+							//arrayList.Add(item.toHashtable());
+                            arrayList.Add(toHashtable(item));
+                        }
 						hashtable[p31DeserializeableFieldAttribute.key] = arrayList;
 					}
 					else if (p31DeserializeableFieldAttribute.type != null)
 					{
-						hashtable[p31DeserializeableFieldAttribute.key] = fieldInfo.GetValue(self).toHashtable();
-					}
+						//hashtable[p31DeserializeableFieldAttribute.key] = fieldInfo.GetValue(self).toHashtable();
+                        hashtable[p31DeserializeableFieldAttribute.key] = Prime31.DeserializationExtensions.toHashtable(fieldInfo.GetValue(self));
+                    }
 					else
 					{
 						hashtable[p31DeserializeableFieldAttribute.key] = fieldInfo.GetValue(self);
