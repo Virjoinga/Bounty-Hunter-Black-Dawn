@@ -2,7 +2,7 @@ using HutongGames.PlayMaker;
 using UnityEngine;
 
 [ActionCategory("GameEvent")]
-[Tooltip("Custion Action...")]
+[HutongGames.PlayMaker.Tooltip("Custion Action...")]
 public class FrCheckActived : FsmStateAction
 {
 	[RequiredField]

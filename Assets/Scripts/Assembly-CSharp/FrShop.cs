@@ -2,7 +2,7 @@ using HutongGames.PlayMaker;
 using UnityEngine;
 
 [ActionCategory("GameEvent")]
-[Tooltip("Custom Action...")]
+[HutongGames.PlayMaker.Tooltip("Custom Action...")]
 public class FrShop : FsmStateAction
 {
 	public GameObject m_ShopUI;

@@ -1,7 +1,7 @@
 using HutongGames.PlayMaker;
 using UnityEngine;
 
-[Tooltip("Custom Active...")]
+[HutongGames.PlayMaker.Tooltip("Custom Active...")]
 [ActionCategory("GameEvent")]
 public class FrDestroyMyself : FsmStateAction
 {
